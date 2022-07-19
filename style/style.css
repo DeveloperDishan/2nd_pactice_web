@@ -104,6 +104,11 @@ li {
     justify-content: space-evenly;
     margin: 100px auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+}
+
+.bottom_inner img {
+    width: 100%;
 }
 
 /* banner part css end */
@@ -161,4 +166,83 @@ li {
     margin: 20px 0;
 }
 
+footer {
+    background-color: #0A0826;
+    height: 239px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_text {
+    text-align: center;
+    color: #fff;
+}
+
 /* popular part css end */
+/* responsive design */
+/* mobile device */
+@media only screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .banner_main {
+
+        flex-direction: column-reverse;
+    }
+
+    .banner_left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner_right {
+        background-image: url(../images/Circle_design.svg);
+        height: 475px;
+        width: 100%;
+        margin: 0% auto;
+
+    }
+
+    .banner_right img {
+        width: 68%;
+        position: relative;
+        top: 95px;
+        left: 81px;
+    }
+
+    .banner_bottom {
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+    .bottom_inner img {
+        width: 70%;
+    }
+
+    .populer_main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature_product_main {
+        flex-direction: column-reverse;
+    }
+
+    .feature_product_right {
+        width: 100%;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .feature_product_left {
+        margin-top: 52px;
+        margin-bottom: -47px;
+        padding: 0 16px;
+    }
+
+    .feature_product_left img {
+        width: 100%;
+    }
+}
